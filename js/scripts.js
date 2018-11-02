@@ -18,6 +18,15 @@ Pizza.prototype.findPrice = function(){
   if (this.cheese === "no"){
     this.price -= 1
   }
+  if (this.topping === "pineapple" || this.topping === "spinach" || this.topping === "olives" || this.topping === "onions" || this.topping === "peppers" || this.topping === "tomatoes" || this.topping === "jalapeno" || this.topping === "extra cheese"){
+    this.price += .50
+  } else if (this.topping === "pepperoni" || this.topping === "sausage" || this.topping === "bacon" || this.topping === "ham" || this.topping === "beef"){
+    this.price += 1
+  } else if (this.topping === "shrimp"){
+    this.price += 2
+  } else if (this.topping === "none"){
+    this.price -= .50
+  }
 }
 
 //frontend
