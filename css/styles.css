@@ -1,3 +1,6 @@
+body {
+  font-size: 12pt;
+}
 #result-well {
   display: none;
 }
@@ -11,5 +14,6 @@
   font-size: 12pt;
 }
 img {
-  margin-bottom: 25px
+  margin-bottom: 25px;
+  box-shadow: 2px 2px black;
 }

@@ -30,11 +30,11 @@ $(document).ready(function(){
     newPizza = new Pizza (selectedSize, selectedCheese, selectedTopping);
     newPizza.findPrice();
     console.log(newPizza)
-  $("#result-well").show();
-  if ((selectedSize === "small" || selectedSize === "medium" || selectedSize === "large") && (selectedCheese === "yes" || selectedCheese === "no")){
-    $("#result").text("The pizza you are ordering is a " + newPizza.size + " pizza. You have selected: '" + newPizza.cheese + "' for cheese, your pizza will also include the topping: '" + newPizza.topping + "' the price of your pizza when you pick it up will be: $" + newPizza.price)
-    } else if (!selectedSize || selectedSize !== "small" || selectedSize !== "medium" || selectedSize !== "large"){
-        $("#result").text("ERROR: PLEASE ENTER A VALID SIZE: (small/medium/large) AND/OR VALID ANSWER: (yes/no)")
+    $("#result-well").show();
+    if ((selectedSize === "small" || selectedSize === "medium" || selectedSize === "large") && (selectedCheese === "yes" || selectedCheese === "no") && (selectedTopping === "pepperoni" || selectedTopping === "pineapple" || selectedTopping === "sausage" || selectedTopping === "bacon" || selectedTopping === "spinach" || selectedTopping === "olives" || selectedTopping === "ham" || selectedTopping === "onions" || selectedTopping === "peppers" || selectedTopping === "beef" || selectedTopping === "tomatoes" || selectedTopping === "jalapeno" || selectedTopping === "shrimp" || selectedTopping === "extra cheese" || selectedTopping === "none")){
+      $("#result").text("The pizza you are ordering is a " + newPizza.size + " pizza. You have selected: '" + newPizza.cheese + "' for cheese, your pizza will also include the topping: '" + newPizza.topping + "' the price of your pizza when you pick it up will be: $" + newPizza.price)
+    } else {
+      $("#result").text("ERROR: PLEASE ENTER A VALID SIZE: (small/medium/large) AND/OR VALID ANSWER: (yes/no) AND/OR THAT THE TOPPING IS PRINTED AS IT IS IN THE 'TOPPINGS LIST'")
     }
   })
 })
