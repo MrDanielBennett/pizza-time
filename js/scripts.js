@@ -30,6 +30,6 @@ $(document).ready(function(){
     newPizza = new Pizza (selectedSize, selectedCheese, selectedTopping);
     newPizza.findPrice();
     console.log(newPizza)
-    $("#result").text();
+    $("#result").text("The pizza you are ordering is a " + newPizza.size + " pizza. You have selected: '" + newPizza.cheese + "' for cheese, your pizza will also include the topping: '" + newPizza.topping + "' the price of your pizza when you pick it up will be: $" + newPizza.price);
   })
 })
