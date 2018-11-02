@@ -14,24 +14,32 @@
       <h1>Joe's Pizza</h1>
       <p>Pizza Time!</p>
   </div>
-  <div class="well">
-    <form id="pizza-maker">
-      <div class="form-group">
-        <p>Size: (small/medium/large)</p>
-        <input id="size" type="text" inputValue="">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="well">
+        <form id="pizza-maker">
+          <div class="form-group">
+            <p>Size: (small/medium/large)</p>
+            <input id="size" type="text" inputValue="">
+          </div>
+          <div class="form-group">
+            <p>Cheese? (yes/no)</p>
+            <input id="cheese" type="text" inputValue="">
+          </div>
+          <div class="form-group">
+            <p>Topping: (any from topping list above)</p>
+            <input id="topping" type="text" inputValue="">
+          </div>
+            <button type="submit" name="button">Make Pizza!</button>
+        </form>
       </div>
-      <div class="form-group">
-        <p>Cheese? (yes/no)</p>
-        <input id="cheese" type="text" inputValue="">
+    </div>
+    <div class="col-sm-6">
+      <div class="well">
+        <p id="result"></p>
       </div>
-      <div class="form-group">
-        <p>Topping: (any from topping list above)</p>
-        <input id="topping" type="text" inputValue="">
-      </div>
-        <button type="submit" name="button">Make Pizza!</button>
-    </form>
+    </div>
   </div>
-    <p id="result"></p>
   </div>
 </body>
 </html>
