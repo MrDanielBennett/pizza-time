@@ -1,11 +1,21 @@
 body {
   font-size: 12pt;
+  background-image: url("../img/pizza.jpg");
+  background-size: cover;
+}
+.jumbotron {
+  padding-top: 10px;
+  margin-top: 10px;
+  box-shadow: 2px 2px black;
+}
+.well {
+  box-shadow: 2px 2px black;
 }
 #result-well {
   display: none;
 }
 #topping-well {
-  height: 150px
+  height: 175px;
 }
 #toppings li {
   float: left;
@@ -16,4 +26,11 @@ body {
 img {
   margin-bottom: 25px;
   box-shadow: 2px 2px black;
+}
+h1 {
+  text-shadow: 2px 2px white;
+}
+
+h3 {
+  text-shadow: 2px 2px white;
 }
