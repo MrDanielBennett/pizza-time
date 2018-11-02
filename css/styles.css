@@ -1,6 +1,15 @@
 #result-well {
   display: none;
 }
+#topping-well {
+  height: 150px
+}
+#toppings li {
+  float: left;
+  margin-left: 25px;
+  padding-bottom: 20px;
+  font-size: 12pt;
+}
 img {
   margin-bottom: 25px
 }
