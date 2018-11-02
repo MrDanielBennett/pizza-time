@@ -30,17 +30,11 @@ $(document).ready(function(){
     newPizza = new Pizza (selectedSize, selectedCheese, selectedTopping);
     newPizza.findPrice();
     console.log(newPizza)
-    // $("#result").text("The pizza you are ordering is a " + newPizza.size + " pizza. You have selected: '" + newPizza.cheese + "' for cheese, your pizza will also include the topping: '" + newPizza.topping + "' the price of your pizza when you pick it up will be: $" + newPizza.price);
-
-
-//Broken ERROR message
-    // debugger
+  $("#result-well").show();
   if ((selectedSize === "small" || selectedSize === "medium" || selectedSize === "large") && (selectedCheese === "yes" || selectedCheese === "no")){
     $("#result").text("The pizza you are ordering is a " + newPizza.size + " pizza. You have selected: '" + newPizza.cheese + "' for cheese, your pizza will also include the topping: '" + newPizza.topping + "' the price of your pizza when you pick it up will be: $" + newPizza.price)
     } else if (!selectedSize || selectedSize !== "small" || selectedSize !== "medium" || selectedSize !== "large"){
         $("#result").text("ERROR: PLEASE ENTER A VALID SIZE: (small/medium/large) AND/OR VALID ANSWER: (yes/no)")
-    // } else if (selectedCheese !== "yes" || selectedCheese !== "no") {
-    //   $("#result").text("ERROR: PLEASE ENTER A VALID ANSWER: (yes/no)")
     }
   })
 })
