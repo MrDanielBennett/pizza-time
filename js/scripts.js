@@ -11,9 +11,12 @@ Pizza.prototype.findPrice = function(){
   if (this.size === "small"){
     this.price = 5
   } else if (this.size === "medium"){
-    this.price = 7.5
+    this.price += 2.50
   } else if (this.size === "large"){
-    this.price = 10
+    this.price += 5
+  }
+  if (this.cheese === "no"){
+    this.price -= 1
   }
 }
 
